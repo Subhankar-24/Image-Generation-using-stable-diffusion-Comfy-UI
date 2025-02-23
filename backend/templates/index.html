@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stable Diffusion Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Generator</h1>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+        
+        <div class="form-container">
+            <div class="input-group">
+                <label for="prompt">Prompt:</label>
+                <textarea id="prompt" required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="negative-prompt">Negative Prompt:</label>
+                <textarea id="negative-prompt"></textarea>
+            </div>
+            <div class="params">
+                <div>
+                    <label for="steps">Steps:</label>
+                    <input type="number" id="steps" value="20" min="1" max="150">
+                </div>
+                <div>
+                    <label for="cfg">CFG Scale:</label>
+                    <input type="number" id="cfg" value="7" min="1" max="20" step="0.5">
+                </div>
+            </div>
+            <button id="generate-btn">Generate Image</button>
+        </div>
+
+        <div id="result" class="hidden">
+            <img id="generated-image" alt="Generated image">
+            <button id="download-btn">Download Image</button>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

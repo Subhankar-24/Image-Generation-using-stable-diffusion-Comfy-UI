@@ -1,0 +1,85 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --input-bg: #f0f0f0;
+    --button-bg: #007bff;
+    --button-hover: #0056b3;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --input-bg: #2d2d2d;
+    --button-bg: #4a4a4a;
+    --button-hover: #2d2d2d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-container {
+    background: var(--input-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid #666;
+    border-radius: 4px;
+}
+
+.params {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#generated-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.hidden {
+    display: none;
+}
