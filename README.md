@@ -1,4 +1,4 @@
-Image Generation Using Stable Diffusion
+#Image Generation Using Stable Diffusion
 
 A web-based application for generating high-quality AI-generated images using Stable Diffusion. This project leverages Python for the backend, providing an intuitive interface to generate, customize, and download AI-generated images.
 
@@ -29,11 +29,11 @@ API: ComfyUI / Stable Diffusion API
 https://github.com/Subhankar-24/Image-Generation-using-stable-diffusion-Comfy-UI.git
 
 2️⃣ Install Dependencies 
-
+```
 pip install flask
 pip install requests
 pip install python-dotenv
-
+```
 📷 Usage Enter a text prompt for image generation.
 Adjust parameters like resolution.
 Click "Generate Image" to create an image.
